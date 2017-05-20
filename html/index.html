@@ -1,0 +1,30 @@
+<link href="http://fonts.googleapis.com/css?family=Lobster|Dancing Script|Architects Daughter" rel="stylesheet" type="text/css">
+
+<body ng-app="calculator">
+  <div class="container" ng-controller="calcCtrl">
+    <h2 class="title">Javascript Calculator</h2>
+    <div class="calc-container">
+      <div class="result-screen result-number" ng-model="resultNumber">{{resultNumber}}</div>
+      <span class="nums">
+        <ul>
+          <li ng-repeat="number in numbers">
+            <button ng-click="takeInput(number)" ng-model="number" class="btn" id="number">{{number}}</button>
+          </li>
+          <li>
+            <button ng-click="cleaner()" class="btn" id="delete">C</button>
+          </li>
+          <li>
+            <button ng-click="equals();" class="btn equal">=</button>
+          </li>
+       </ul>
+      </span>
+      <span class="ops">
+        <ul>
+            <li ng-repeat="operator in operators">
+              <button class="btn btn-operator" ng-click="takeOperator(operator)" ng-model="op">{{operator}}</button>
+          </li>
+        </ul>
+      </span>
+
+
+</body>
