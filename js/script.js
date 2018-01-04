@@ -58,21 +58,21 @@ function calcCtrl($scope) {
     console.log('model:', model);
       switch ($scope.op) {
         case "+":
-          //$scope.add(n1);
+          
           $scope.resultNumber += $scope.previousNumber;
           //
           break;
         case "-":
                     console.log('subtract:', $scope.previousNumber, $scope.resultNumber);
-          //$scope.subtract(n1);
+          
       $scope.resultNumber = $scope.previousNumber - $scope.resultNumber;
           break;
         case "x":
-          //$scope.multiply(n1);
+          
           $scope.resultNumber *= $scope.previousNumber;
           break;
         case "/":
-          //$scope.divide(n1);
+          
          $scope.resultNumber = $scope.previousNumber / $scope.resultNumber;
           break;
       }
@@ -82,53 +82,20 @@ function calcCtrl($scope) {
       $scope.display = [];
     }
   $scope.equals = function() {
-  // can't even if this working at all...
+ 
   $scope.takeOperator();
 }
 
-    /*
-    I'm pretty sure I don't need this $scope.different operands anymore if I well defined it in the switch case ...
-      $scope.add = function() {
-        alert('first num: ' +  $scope.resultNumber);
-        num = $scope.currentNumber;
-
-      */
+   
 
 }
-/*
-  $scope.subtract = function(n1, n2) {
-    $scope.resultNumber =  $scope.number1 - $scope.number2;
-
-    return $scope.resultNumber;
-  }
-
-  $scope.multiply = function(n1, n2) {
-    $scope.number1 - $scope.number2;
-     $scope.resultNumber = n1 * n2;
-  }
-  $scope.divide = function(n1, n2) {
-     $scope.resultNumber = n1/n2;
-  }
-
-  $scope.equals = function(n1, n2) {
-    ///alert('second num: ' + $scope.number2);
-    //return $scope.resultNumber;
-
-  }
-  */
 
 $scope.equals = function() {
-  // can't if this working at all...
+  
   $scope.resultNumber;
 }
 
-/*   do I even need this anymore if the switch function holds true???
-  $scope.senseMind = function() {
-    eval($scope.currentNumber + $scope.operators);
-  }
-*/
 
-//this works, thank god...
 $scope.cleaner = function() {
   $scope.resultNumber = 0;
   $scope.display = [];
