@@ -52,10 +52,10 @@ function calcCtrl($scope) {
   $scope.takeOperator = function(model) {
     $scope.all.push($scope.currentNumber);
     $scope.all.push(model);
-    console.log('all:', $scope.all.join(' '));
+    
 
-    console.log('scope.op:', $scope.op);
-    console.log('model:', model);
+    
+    
       switch ($scope.op) {
         case "+":
           
@@ -63,7 +63,7 @@ function calcCtrl($scope) {
           //
           break;
         case "-":
-                    console.log('subtract:', $scope.previousNumber, $scope.resultNumber);
+                    
           
       $scope.resultNumber = $scope.previousNumber - $scope.resultNumber;
           break;
