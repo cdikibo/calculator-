@@ -101,4 +101,4 @@ $scope.cleaner = function() {
   $scope.display = [];
 }
 
-//}
+}
