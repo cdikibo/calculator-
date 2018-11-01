@@ -129,7 +129,7 @@ $scope.equals = function() {
 */
 
 //this works, thank god...
-$scope.cleaner = function() {
+$scope.cleaned = function() {
   $scope.resultNumber = 0;
   $scope.display = [];
 }
